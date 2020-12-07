@@ -1,0 +1,17 @@
+{
+  "name": "Bryn Tech Test Extension",
+  "manifest_version": 2,
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://gitpod.io/*"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ],
+  "permissions": ["contextMenus", "activeTab", "background", "webNavigation"]
+}
