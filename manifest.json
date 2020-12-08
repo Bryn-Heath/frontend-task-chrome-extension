@@ -8,10 +8,11 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://gitpod.io/*"],
+      "matches": ["<all_urls>"],
       "js": ["content.js"],
       "all_frames": true
     }
   ],
-  "permissions": ["contextMenus", "activeTab", "background", "webNavigation"]
+  "permissions": ["contextMenus", "activeTab", "background", "webNavigation"],
+  "content_security_policy": "script-src 'self' 'sha256-AeZmmPP/9ueCrodQPplotiV3Pw0YW4QqifjUL7NE248='; object-src 'self'"
 }
