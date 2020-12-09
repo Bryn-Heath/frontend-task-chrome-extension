@@ -60,16 +60,11 @@ topDOC.body.addEventListener('contextmenu', function () {
       });
 
   });
-
-  
-
+ 
 });
 
- 
-
-
 const removeSpinnerContainer = document.querySelector('#root > div.start'); //select the div containing spinner and loading info
-removeSpinnerContainer ? removeSpinnerContainer.remove() : null ; // remove starting div container
+removeSpinnerContainer ? removeSpinnerContainer.remove() : null; // remove starting div container
 
 const appendHere = document.querySelector('#root'); //select div to create new spinner/loading message (my name)
 document.querySelector('html');
